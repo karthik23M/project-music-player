@@ -10,16 +10,17 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Warriyo - Mortals [NCS Release]", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Cielo - Huma-Huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "DEAF KEV - Invincible [NCS Release]-320k", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Different Heaven & EH!DE - My Heart [NCS Release]", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Janji-Heroes-Tonight-feat-Johnning-NCS-Release", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Rabba - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/6.jpg"},
-    {songName: "Sakhiyaan - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/7.jpg"},
-    {songName: "Bhula Dena - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/8.jpg"},
-    {songName: "Tumhari Kasam - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/9.jpg"},
-    {songName: "Na Jaana - Salam-e-Ishq", filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
+    {songName: "demo1", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "demo2", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "demo3", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "demo4", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "demo5", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "demo6", filePath: "songs/2.mp3", coverPath: "covers/6.jpg"},
+    {songName: "demo7", filePath: "songs/2.mp3", coverPath: "covers/7.jpg"},
+    {songName: "demo8", filePath: "songs/2.mp3", coverPath: "covers/8.jpg"},
+    {songName: "demo9", filePath: "songs/2.mp3", coverPath: "covers/9.jpg"},
+    {songName: "demo10", filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
+    {songName: "demo11", filePath: "songs/4.mp3", coverPath: "covers/11.jpg"}
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -78,7 +79,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>=9){
+    if(songIndex>=10){
         songIndex = 0
     }
     else{
